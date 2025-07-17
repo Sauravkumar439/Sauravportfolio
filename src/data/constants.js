@@ -5,7 +5,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/Sauravkumar439",
   resume:
-    "https://drive.google.com/file/d/11KPvvDDrbKswtwG13gDXniIviEg2mVux/view?usp=sharing",
+    "https://drive.google.com/file/d/1OgkcTpUj3cV4c5M3anm0mnyqt8rjOfQB/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/saurav-kumar-3a05a3a9/",
   twitter: "https://twitter.com/sauravk80419881",
   insta: "https://instagram.com/saurav_kumar._",
@@ -67,7 +67,7 @@ export const skills = [
     skills: [
       {
         name: "PHP",
-        image: "https://cdn.worldvectorlogo.com/logos/php-1.svg",
+        image: "https://www.vectorlogo.zone/logos/php/php-icon.svg",
       },
       {
         name: "CodeIgniter",
@@ -144,7 +144,7 @@ export const skills = [
       {
         name: "Git",
         image:
-          "https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667",
+          "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
       },
       {
         name: "GitHub",
@@ -168,17 +168,17 @@ export const skills = [
       {
         name: "Postman",
         image:
-          "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
+          "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
       },
       {
         name: "Adobe XD",
         image:
-          "https://camo.githubusercontent.com/c205ecbe12500177d102169d97bc1c17c545155fdf5ec78c08d54ac53e5b38c1/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f61646f62652d78642e737667",
+          "https://upload.wikimedia.org/wikipedia/commons/c/c2/Adobe_XD_CC_icon.svg",
       },
       {
         name: "Figma",
         image:
-          "https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667",
+          "https://www.vectorlogo.zone/logos/figma/figma-icon.svg",
       },
     ],
   },
@@ -200,16 +200,16 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://github.com/Sauravkumar439/assets/blob/main/Indian_Institute_of_Information_Technology,_Bhagalpur_logo.png?raw=true",
+    img: "https://github.com/Sauravkumar439/image-for-portfolio/blob/main/Indian_Institute_of_Information_Technology%2C_Bhagalpur_logo.png?raw=true",
     school: "Indian Institute of Information Technology, Bhagalpur",
-    date: "Aug 2023 - (present)",
-    // grade: "8.04 DGPA",
-    desc: "I am currently pursuing M.Tech degree in Computer Science and Engineering at Indian Institute of Information Technology, Bhagalpur.  I have taken courses in Artificial Intelligence and Data Science ",
+    date: "Aug 2023 - July 2025",
+    // grade: "7 DGPA",
+    desc: "I Completed M.Tech in Computer Science and Engineering with a focus on Artificial Intelligence and Data Science. Gained expertise in advanced algorithms, machine learning, deep learning, and big data technologies through academic coursework and hands-on projects.",
     degree: "Master of Technology - M.Tech, Computer Science and Engineering",
   },
   {
     id: 1,
-    img: "https://github.com/Sauravkumar439/assets/blob/main/Mckvie_logo1.jpg?raw=true",
+    img: "https://github.com/Sauravkumar439/image-for-portfolio/blob/main/Mckvie_logo1.jpg?raw=true",
     school: "MCKV Institute of Engineering Kolkata",
     date: "Aug 2017 - Jul 2021",
     grade: "8.04 DGPA",
@@ -218,7 +218,7 @@ export const education = [
   },
   {
     id: 2,
-    img: "https://github.com/Sauravkumar439/assets/blob/main/class%20xii%20logo.png?raw=true",
+    img: "https://github.com/Sauravkumar439/image-for-portfolio/blob/main/mbbl%20college.JPG?raw=true",
     school: "Mahesh Bhagat Banwari Lal Inter College Muzaffarpur",
     date: "May2014 - Apr 2016",
     grade: "53%",
@@ -227,8 +227,8 @@ export const education = [
   },
   {
     id: 3,
-    img: "https://github.com/Sauravkumar439/assets/blob/main/class%20x%20logo.jpeg?raw=true",
-    school: "Shantiniketan Awasiya Bal Vidyalaya Muzaffarpur",
+    img: "https://github.com/Sauravkumar439/image-for-portfolio/blob/main/sav%20image.jpeg?raw=true",
+    school: "Shanti Niketan Awasiya Bal Vidyalaya Muzaffarpur",
     date: "Apr 2012 - May 2014",
     grade: "87.04%",
     desc: "I completed my class 10 education at Shantiniketan Awasiya Bal Vidyalaya Muzaffarpur where I studied Science with Foundation of IT.",
@@ -239,20 +239,58 @@ export const education = [
 export const projects = [
   {
     id: 9,
-    title: "Todo",
-    date: "Jun 2023 - Jul 2023",
+    title: "Underwater Image Enhancement (Deep Learning)",
+    date: " July 2025",
     description:
-      "This is a todo lisi app where user can add and delete their todo's.",
+      "Developed and deployed a deep learning model (U-Net with CBAM) to enhance underwater images. Trained on the EUVP dataset and deployed with Gradio on Hugging Face Spaces using TensorFlow SavedModel (Keras 3)",
     image:
-      "https://github.com/Sauravkumar439/assets/blob/main/todo.jpg?raw=true",
+      "https://github.com/Sauravkumar439/underwater-enhancer/blob/main/underwater%20image%20enhancer.JPG?raw=true",
     tags: [
-      "React Js",
-      "Express Js",
-      "Redux",
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "Hugging Face Spaces (Gradio UI)",
     ],
     category: "web app",
-    github: "https://github.com/Sauravkumar439/TodoList",
-    webapp: "https://todolistsapps.netlify.app/",
+    github: "https://github.com/Sauravkumar439/underwater-enhancer",
+    webapp: "https://huggingface.co/spaces/sauravkumar439/underwater-enhancer",
+  },
+  {
+    id: 10,
+    title: "Weather Forecast",
+    date: " July 2025",
+    description:
+      "Built a responsive Weather Forecast application using React and OpenWeather API. Implemented real-time weather updates, search functionality, and an intuitive UI with Tailwind CSS. Deployed on Netlify for live access.",
+    image:
+      "https://github.com/Sauravkumar439/weather-forecast-app/blob/main/weather%20forecast.JPG?raw=true",
+    tags: [
+      "React.js",
+      "Tailwind CSS",
+      "OpenWeather API",
+      "Netlify",
+    ],
+    category: "web app",
+    github: "https://github.com/Sauravkumar439/weather-forecast-app",
+    webapp: "https://weather-forecastweb-app.netlify.app/",
+  },
+  {
+    id: 11,
+    title: "Recipe Finder",
+    date: " July 2025",
+    description:
+      "Built an interactive Recipe Finder web application using React.js, integrating Spoonacular API to fetch real-time recipe data. Designed a clean and responsive interface with Material UI and implemented engaging animations using Framer Motion for enhanced UX. Deployed on Netlify for live access, ensuring fast and reliable performance across devices.",
+    image:
+      "https://github.com/Sauravkumar439/Recipe-Finder/blob/main/recipe%20finder.JPG?raw=true",
+    tags: [
+      "React.js",
+      "Material UI",
+      "Framer Motion",
+      "Spoonacular API",
+      "Netlify",
+    ],
+    category: "web app",
+    github: "https://github.com/Sauravkumar439/Recipe-Finder",
+    webapp: "https://recipe-finderrr.netlify.app/",
   },
   
   

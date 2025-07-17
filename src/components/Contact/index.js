@@ -1,34 +1,22 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import styled from "styled-components";
-import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { Snackbar } from "@mui/material";
+import { Snackbar, Alert } from "@mui/material";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
-  z-index: 1;
   align-items: center;
-  @media (max-width: 960px) {
-    padding: 0px;
-  }
+  padding: 0px 0px 80px 0px;
 `;
 
 const Wrapper = styled.div`
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
   width: 100%;
   max-width: 1350px;
-  padding: 0px 0px 80px 0px;
-  gap: 12px;
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const Title = styled.div`
@@ -37,10 +25,6 @@ const Title = styled.div`
   font-weight: 600;
   margin-top: 20px;
   color: ${({ theme }) => theme.text_primary};
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 32px;
-  }
 `;
 
 const Desc = styled.div`
@@ -48,10 +32,6 @@ const Desc = styled.div`
   text-align: center;
   max-width: 600px;
   color: ${({ theme }) => theme.text_secondary};
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 16px;
-  }
 `;
 
 const ContactForm = styled.form`
@@ -69,89 +49,74 @@ const ContactForm = styled.form`
 
 const ContactTitle = styled.div`
   font-size: 24px;
-  margin-bottom: 6px;
   font-weight: 600;
   color: ${({ theme }) => theme.text_primary};
 `;
 
 const ContactInput = styled.input`
-  flex: 1;
   background-color: transparent;
   border: 1px solid ${({ theme }) => theme.text_secondary};
-  outline: none;
-  font-size: 18px;
-  color: ${({ theme }) => theme.text_primary};
   border-radius: 12px;
+  font-size: 18px;
   padding: 12px 16px;
+  color: ${({ theme }) => theme.text_primary};
   &:focus {
     border: 1px solid ${({ theme }) => theme.primary};
   }
 `;
 
 const ContactInputMessage = styled.textarea`
-  flex: 1;
   background-color: transparent;
   border: 1px solid ${({ theme }) => theme.text_secondary};
-  outline: none;
-  font-size: 18px;
-  color: ${({ theme }) => theme.text_primary};
   border-radius: 12px;
+  font-size: 18px;
   padding: 12px 16px;
+  color: ${({ theme }) => theme.text_primary};
   &:focus {
     border: 1px solid ${({ theme }) => theme.primary};
   }
+  }
 `;
 
-const ContactButton = styled.input`
-  width: 100%;
-  text-decoration: none;
-  text-align: center;
-  background: hsla(271, 100%, 50%, 1);
-  background: linear-gradient(
-    225deg,
-    hsla(271, 100%, 50%, 1) 0%,
-    hsla(294, 100%, 50%, 1) 100%
-  );
-  background: -moz-linear-gradient(
-    225deg,
-    hsla(271, 100%, 50%, 1) 0%,
-    hsla(294, 100%, 50%, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    225deg,
-    hsla(271, 100%, 50%, 1) 0%,
-    hsla(294, 100%, 50%, 1) 100%
-  );
+const ContactButton = styled.button`
+  background: linear-gradient(225deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
   padding: 13px 16px;
-  margin-top: 2px;
   border-radius: 12px;
-  border: none;
-  color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
+  cursor: pointer;
+  opacity: ${({ disabled }) => (disabled ? 0.6 : 1)};
+  border: none;
 `;
 
 const Contact = () => {
-  //hooks
-  const [open, setOpen] = React.useState(false);
   const form = useRef();
+  const [openSuccess, setOpenSuccess] = useState(false);
+  const [openFail, setOpenFail] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (loading) return;
+    setLoading(true);
+
     emailjs
       .sendForm(
-        "service_tox7kqs",
-        "template_nv7k7mj",
+        "service_sxmrh6d", // ✅ Your Service ID
+        "template_q0mb5fi", // ✅ Your Template ID
         form.current,
-        "SybVGsYS52j2TfLbi"
+        "FPSqqBdgz_pONt7pI" // ✅ Your Public Key
       )
       .then(
-        (result) => {
-          setOpen(true);
+        () => {
+          setOpenSuccess(true);
           form.current.reset();
+          setLoading(false);
         },
-        (error) => {
-          console.log(error.text);
+        () => {
+          setOpenFail(true);
+          setLoading(false);
         }
       );
   };
@@ -160,28 +125,42 @@ const Contact = () => {
     <Container>
       <Wrapper>
         <Title>Contact</Title>
-        <Desc>
-          Feel free to reach out to me for any questions or opportunities!
-        </Desc>
-        <ContactForm
-          
-          ref={form}
-          onSubmit={handleSubmit}
-        >
+        <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
+        <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" rows="4" name="message" />
-          <ContactButton type="submit" value="Send" />
+          <ContactInput name="name" placeholder="Your Name" required />
+          <ContactInput name="email" type="email" placeholder="Your Email" required />
+          <ContactInput name="title" placeholder="Subject" required />
+          <ContactInputMessage name="message" placeholder="Message" required />
+          <ContactButton type="submit" disabled={loading}>
+            {loading ? "Sending..." : "Send"}
+          </ContactButton>
         </ContactForm>
+
+        {/* Success Snackbar */}
         <Snackbar
-          open={open}
-          autoHideDuration={6000}
-          onClose={() => setOpen(false)}
-          message="Email sent successfully!"
-          severity="success"
-        />
+          open={openSuccess}
+          autoHideDuration={4000}
+          onClose={() => setOpenSuccess(false)}
+          anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+        >
+          <Alert onClose={() => setOpenSuccess(false)} severity="success" sx={{ width: "100%" }}>
+            <p style={{ color: "green", marginTop: "10px", fontWeight: "600" }}></p>
+            Email sent successfully!
+          </Alert>
+        </Snackbar>
+
+        {/* Error Snackbar */}
+        <Snackbar
+          open={openFail}
+          autoHideDuration={4000}
+          onClose={() => setOpenFail(false)}
+          anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+        >
+          <Alert onClose={() => setOpenFail(false)} severity="error" sx={{ width: "100%" }}>
+            Failed to send email. Please try again later.
+          </Alert>
+        </Snackbar>
       </Wrapper>
     </Container>
   );
