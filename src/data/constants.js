@@ -5,7 +5,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/Sauravkumar439",
   resume:
-    "https://drive.google.com/file/d/1OgkcTpUj3cV4c5M3anm0mnyqt8rjOfQB/view?usp=sharing",
+    "https://drive.google.com/file/d/13aa8_MrYaqIf_cuwMoO6jYpRTAtuqmNO/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/saurav-kumar-3a05a3a9/",
   twitter: "https://twitter.com/sauravk80419881",
   insta: "https://instagram.com/saurav_kumar._",
@@ -255,8 +255,27 @@ export const projects = [
     github: "https://github.com/Sauravkumar439/underwater-enhancer",
     webapp: "https://huggingface.co/spaces/sauravkumar439/underwater-enhancer",
   },
-  {
+   {
     id: 10,
+    title: "AI Chatbot",
+    date: " July 2025",
+    description:
+      "Developed a modern, responsive chatbot using React (Vite) with Tailwind CSS and Framer Motion for smooth UI/UX. Integrated OpenAI API for intelligent responses, along with JWT-based authentication, user profile and avatar management, and real-time typing indicators. Designed a robust backend with Node.js, Express, and MongoDB, and deployed the solution on Netlify (frontend) and Render (backend).",
+    image:
+      "https://github.com/Sauravkumar439/AI_CHATBOT_FRONTEND/blob/main/AI%20CHATBOT.JPG?raw=true",
+    tags: [
+      "React.js",
+      "Material UI",
+      "Framer Motion",
+      "Spoonacular API",
+      "Netlify",
+    ],
+    category: "web app",
+    github: "https://github.com/Sauravkumar439/AI_CHATBOT_FRONTEND",
+    webapp: "https://aichhatbot.netlify.app/",
+  },
+  {
+    id: 11,
     title: "Weather Forecast",
     date: " July 2025",
     description:
@@ -274,7 +293,7 @@ export const projects = [
     webapp: "https://weather-forecastweb-app.netlify.app/",
   },
   {
-    id: 11,
+    id: 12,
     title: "Recipe Finder",
     date: " July 2025",
     description:
@@ -292,7 +311,7 @@ export const projects = [
     github: "https://github.com/Sauravkumar439/Recipe-Finder",
     webapp: "https://recipe-finderrr.netlify.app/",
   },
-  
+ 
   
 ];
 
