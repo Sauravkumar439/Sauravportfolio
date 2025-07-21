@@ -265,10 +265,9 @@ export const projects = [
       "https://github.com/Sauravkumar439/AI_CHATBOT_FRONTEND/blob/main/AI%20CHATBOT.JPG?raw=true",
     tags: [
       "React.js",
-      "Material UI",
+      "Taiwind CSS",
       "Framer Motion",
-      "Spoonacular API",
-      "Netlify",
+      "OpenAI API",
     ],
     category: "web app",
     github: "https://github.com/Sauravkumar439/AI_CHATBOT_FRONTEND",
