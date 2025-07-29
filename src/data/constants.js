@@ -5,7 +5,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/Sauravkumar439",
   resume:
-    "https://drive.google.com/file/d/13aa8_MrYaqIf_cuwMoO6jYpRTAtuqmNO/view?usp=sharing",
+    "https://drive.google.com/file/d/1MqwNxZte9dMoYtb2WQlCmG4i8EZSCDNz/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/saurav-kumar-3a05a3a9/",
   twitter: "https://twitter.com/sauravk80419881",
   insta: "https://instagram.com/saurav_kumar._",
@@ -255,8 +255,26 @@ export const projects = [
     github: "https://github.com/Sauravkumar439/underwater-enhancer",
     webapp: "https://huggingface.co/spaces/sauravkumar439/underwater-enhancer",
   },
-   {
+  {
     id: 10,
+    title: "E-Commerce Web Application",
+    date: " July 2025",
+    description:
+      "Designed and developed a fully functional AI-powered e-commerce web application using React.js, Tailwind CSS, and Node.js. Implemented user authentication, dynamic product management, cart and checkout system, and an admin dashboard with order tracking, revenue analytics, and inventory control. Integrated Cloudinary for image uploads and deployed the project on Netlify and Render for a seamless and secure user experience",
+    image:
+      "https://github.com/Sauravkumar439/ecommerce-frontend/blob/main/ecommerce.PNG",
+    tags: [
+      "React.js",
+      "Tailwind CSS + Framer Motion",
+      "Axios",
+      "Netlify (deployment",
+    ],
+    category: "web app",
+    github: "https://github.com/Sauravkumar439/ecommerce-frontend",
+    webapp: "https://e-commerceai.netlify.app/",
+  },
+   {
+    id: 11,
     title: "AI Chatbot",
     date: " July 2025",
     description:
@@ -274,7 +292,7 @@ export const projects = [
     webapp: "https://aichhatbot.netlify.app/",
   },
   {
-    id: 11,
+    id: 12,
     title: "Weather Forecast",
     date: " July 2025",
     description:
@@ -292,7 +310,7 @@ export const projects = [
     webapp: "https://weather-forecastweb-app.netlify.app/",
   },
   {
-    id: 12,
+    id: 13,
     title: "Recipe Finder",
     date: " July 2025",
     description:
