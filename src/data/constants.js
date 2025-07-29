@@ -262,7 +262,7 @@ export const projects = [
     description:
       "Designed and developed a fully functional AI-powered e-commerce web application using React.js, Tailwind CSS, and Node.js. Implemented user authentication, dynamic product management, cart and checkout system, and an admin dashboard with order tracking, revenue analytics, and inventory control. Integrated Cloudinary for image uploads and deployed the project on Netlify and Render for a seamless and secure user experience",
     image:
-      "https://github.com/Sauravkumar439/ecommerce-frontend/blob/main/ecommerce.PNG",
+      "https://github.com/Sauravkumar439/ecommerce-frontend/blob/main/ecommerce.PNG?raw=true",
     tags: [
       "React.js",
       "Tailwind CSS + Framer Motion",
