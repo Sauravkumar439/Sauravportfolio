@@ -5,7 +5,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/Sauravkumar439",
   resume:
-    "https://drive.google.com/file/d/1fM99zjkP_QnL_HUb1b6OEjggwyRja8H9/view?usp=sharing",
+    "https://drive.google.com/file/d/1FBYdkqqLWdy7M_sZnfwkNH8FqTzEaAon/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/sauravkumar439/",
   twitter: "https://twitter.com/sauravk80419881",
   insta: "https://instagram.com/saurav_kumar._",
